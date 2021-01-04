@@ -292,8 +292,27 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Rotate
       m_Flags: 8
+  shoot:
+    m_Name: Shoot
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: cc0f46e7-f092-4fc4-a31b-5485670e2d1a
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 214f845a-5661-46a5-8c39-37b7840602b3
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Shoot
+      m_Flags: 0
   speed: 10
   rotateSpeed: 100
+  onShoot:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &984789164
 GameObject:
   m_ObjectHideFlags: 0
