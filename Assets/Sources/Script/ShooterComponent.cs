@@ -7,6 +7,7 @@ public class ShooterComponent : MonoBehaviour
     public Transform exit;
     public float cooldown = 2;
     public ObjectPoolComponent projectilePool;
+    
 
     private float elapseTime = 0;
 
@@ -22,6 +23,7 @@ public class ShooterComponent : MonoBehaviour
             projectile.transform.position = exit.position;
             projectile.transform.rotation = exit.rotation;
             projectile.SetActive(true);
+            projectile.GetComponent<ProjectileComponent>().startMoving();
             elapseTime = 0;
         }
     }
