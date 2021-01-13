@@ -36,7 +36,7 @@ public class LaserSight : MonoBehaviour
         RaycastHit2D[] raycastHits = new RaycastHit2D[1];
         ContactFilter2D contactFilter2D = new ContactFilter2D();
         
-        if (Physics2D.Linecast(vector, Point2.transform.position,contactFilter2D,raycastHits) != 0)
+        if (Physics2D.Linecast(Point1.transform.position, Point2.transform.position,contactFilter2D,raycastHits) != 0)
         {
             
             line.SetPosition(0, (line.GetPosition(1) + Vector3.up * raycastHits[0].distance)*2);
